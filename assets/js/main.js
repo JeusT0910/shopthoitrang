@@ -125,3 +125,19 @@ function tru(id) {
 function xoa(id) {
     $(`.cart-body-row-${id}`).fadeOut();
 }
+
+const trungne = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
+
+const tabs = $$('.item-manager')
+const panes = $$('.item-detail')
+console.log(tabs)
+tabs.forEach(function(tab, index) {
+    const pane = panes[index]
+    tab.onclick = function() {
+        trungne('.item-manager.active').classList.remove('active')
+        trungne('.item-detail.active').classList.remove('active')
+        this.classList.add('active')
+        pane.classList.add('active')
+    }
+})

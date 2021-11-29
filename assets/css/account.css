@@ -36,12 +36,18 @@
 }
 .detail__confirm-password,
 .detial__my-profile {
-    margin-left: 50px;
 }
-.active {
+.item-manager.active {
     color:var(--hover-color);
-    padding-bottom: 5px;
 }
+.item-detail {
+    display: none;
+}
+.item-detail.active {
+    color: #000 !important;
+    display: block;
+}
+
 .form-group-confirm-password,
 .form-group-new-password,
 .form-group-old-password {
